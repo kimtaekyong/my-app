@@ -16,7 +16,10 @@ function App() {
       <header className="App-header">
         <h1>API 연동</h1>
         <h1>{message}</h1> {/* 상태에 저장된 메시지를 화면에 출력합니다. */}
-        <button onClick={fetchMessage}>API 데이터 가져오기</button> {/* 버튼 클릭 이벤트 핸들러를 추가합니다. */}
+        <button className="api_req" onClick={fetchMessage}>
+          API 데이터 가져오기
+        </button>
+        {/* 버튼 클릭 이벤트 핸들러를 추가합니다. */}
       </header>
     </div>
   );
